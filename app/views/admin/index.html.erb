@@ -1,0 +1,28 @@
+<div class="container">
+  <table>
+    <thead>
+    <tr>
+      <td>Название</td>
+      <td colspan="1">Опубликован</td>
+      <td colspan="2">Фото</td>
+      <td>Изменить</td>
+    </tr>
+    </thead>
+    <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td colspan="1"><%= article.publish ? 'Да' : 'Нет' %></td>
+        <td colspan="2">
+          <div class="thumb"><%= image_tag article.image %></div>
+        </td>
+        <td><a class="link" href="/admin/<%= article.id %>">Изменить</a></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+  <div class="link-group">
+    <a class="link" href="/admin/new">Создать пост</a>
+  </div>
+</div>

@@ -1,0 +1,133 @@
+.container {
+    width: 75%;
+    padding: 2rem;
+    background: #d9d9d9;
+    border-radius: 2rem;
+    margin: 2rem auto auto;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse
+}
+
+thead > tr > td{
+    padding-bottom: 1rem;
+}
+tbody > tr > td{
+    border: none;
+    padding: .5rem 0;
+}
+tbody > tr:nth-child(odd){
+    background: #e5e5e5;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 0;
+}
+
+.form-group > input {
+    border: none;
+    border-radius: 1rem;
+    padding: .6rem;
+    font-size: 1rem;
+}
+
+.form-group > input[type=submit] {
+    border: none;
+    border-radius: 1rem;
+    padding: .6rem;
+    font-size: 1rem;
+    background: #2d59b6;
+    color: #ffffff;
+}
+
+.form-group > input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.form-group > input[type=submit]:active {
+    background: #254da1;
+}
+
+.form-group > textarea {
+    border: none;
+    border-radius: 1rem;
+    padding: .6rem;
+    font-size: 1rem;
+    resize: none
+}
+
+.form-group > .field_with_errors > textarea {
+    border: 1px solid #730E15;
+    border-radius: 1rem;
+    padding: .6rem;
+    font-size: 1rem;
+    resize: none;
+    width: 100%;
+}
+
+.form-group > .field_with_errors > input {
+    border: 1px solid #730E15;
+    border-radius: 1rem;
+    padding: .6rem;
+    font-size: 1rem;
+    resize: none;
+    width: 100%;
+}
+
+.form-group > input:focus-visible {
+    outline: 2px solid #2d59b6;
+}
+
+.form-group > textarea:focus-visible {
+    outline: 2px solid #2d59b6;
+}
+
+.thumbnail {
+    width: 200px;
+}
+
+.thumbnail > img {
+    width: 100%;
+}
+
+.thumb {
+    width: 100px;
+    margin: auto;
+}
+
+.thumb > img {
+    width: 100%;
+}
+
+.link-group {
+    padding-top: 2rem;
+}
+.link {
+    background: #2d59b6;
+    padding: .5rem 1rem;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+}
+button {
+    width: 100%;
+    border: none;
+    background: #2d59b6;
+    padding: .5rem 1rem;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+.danger {
+    background: #730E15;
+}
