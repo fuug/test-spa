@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=main.css.map */
