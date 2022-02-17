@@ -7,13 +7,20 @@ import {Link, useParams} from "react-router-dom";
 const AboutArticle = (props) => {
     const {id} = useParams();
 
-    const dispatch = useDispatch();
-    const article = useSelector(state => state.articles.items);
+    const dispatch_a = useDispatch();
+    let article = useSelector(state => state.articles.item);
+
     useEffect(() => {
-        dispatch(getArticleById(id))
+        dispatch_a(getArticleById(id))
     }, [])
 
-    const article_url = article[0],
+    // article === undefined ? article = [{}, {}] : article;
+
+    if (article === undefined) {
+        article = [{}, {}]
+    }
+    console.log(article);
+const article_url = article[0],
         article_content = article[1];
 
     return (

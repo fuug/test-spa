@@ -1,4 +1,4 @@
-import {setArticles, setThumbnail} from "../../reducers/articleReducer";
+import {setArticles, setOneArticle, setThumbnail} from "../../reducers/articleReducer";
 import axios from "axios";
 
 export const getArticles = () => {
@@ -18,7 +18,7 @@ export const getArticleThumbnailById = (id) => {
 export const getArticleById = (id) => {
     return async (dispatch) => {
         const res = await axios.get(`/article/${id}`);
-        dispatch(setArticles(res.data))
+        dispatch(setOneArticle(res.data))
     };
 }
 

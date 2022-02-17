@@ -21,7 +21,7 @@ const Article = (props) => {
             <div className="title"><h1>{article.title}</h1></div>
             <div className="thumbnail"><img src={img_url} alt=""/></div>
             <div className="content"><p>{article.content}</p></div>
-            <Link to={`/${article.id}`}>Перейти</Link>
+            <Link to={`/article/${article.id}`}>Перейти</Link>
         </div>
     );
 };
